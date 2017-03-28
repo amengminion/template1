@@ -39,38 +39,40 @@ $(document).ready(function(){
     var servicesContainer = $('#services-container');
     if(servicesContainer)
     {
-        var servicesData = [
-            {
-                'imgSrc' : 'img/services-img1.jpg',
-                'title' : 'Services',
-                'permalink' : '#'
-            },
-            {
-                'imgSrc' : 'img/services-img2.jpg',
-                'title' : 'Services',
-                'permalink' : '#'
-            },
-            {
-                'imgSrc' : 'img/services-img3.jpg',
-                'title' : 'Services',
-                'permalink' : '#'
-            },
-            {
-                'imgSrc' : 'img/services-img4.jpg',
-                'title' : 'Services',
-                'permalink' : '#'
-            },
-            {
-                'imgSrc' : 'img/services-img5.jpg',
-                'title' : 'Services',
-                'permalink' : '#'
-            },
-            {
-                'imgSrc' : 'img/services-img6.jpg',
-                'title' : 'Services',
-                'permalink' : '#'
-            },
-        ];
+        var servicesData = {
+            'services' : [
+                {
+                    'imgSrc' : 'img/services-img1.jpg',
+                    'title' : 'Services',
+                    'permalink' : '#'
+                },
+                {
+                    'imgSrc' : 'img/services-img2.jpg',
+                    'title' : 'Services',
+                    'permalink' : '#'
+                },
+                {
+                    'imgSrc' : 'img/services-img3.jpg',
+                    'title' : 'Services',
+                    'permalink' : '#'
+                },
+                {
+                    'imgSrc' : 'img/services-img4.jpg',
+                    'title' : 'Services',
+                    'permalink' : '#'
+                },
+                {
+                    'imgSrc' : 'img/services-img5.jpg',
+                    'title' : 'Services',
+                    'permalink' : '#'
+                },
+                {
+                    'imgSrc' : 'img/services-img6.jpg',
+                    'title' : 'Services',
+                    'permalink' : '#'
+                },
+            ]
+        };
         var servicesScript = $('#services-template').html();
         var servicesCompiled = Handlebars.compile(servicesScript);
         var servicesTemplate = servicesCompiled(servicesData);
