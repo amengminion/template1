@@ -101,7 +101,7 @@
 	        <h1 class="title">Why Us</h1>
 	        <div id="why-us-container" class="row" ></div>
             <script id="why-us-template" type="text/x-handlebars-template">
-                {{#each why-us}}
+                {{#each this}}
                     <div class="col-md-4">
                         <article>
                             <i class="{{icon}}"></i>
@@ -133,7 +133,7 @@
             </p>
             <div id="services-container" class="row"></div>
             <script id="services-template" type="text/x-handlebars-template">
-                {{#each services}}
+                {{#each this}}
                     <div class="col-md-4">
                         <figure>
                             <img src="{{imgSrc}}" class="img-responsive">
