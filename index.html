@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="THIS, IS, A, TEMPLATE">
+    <meta name="description" content="THIS IS A DESCRIPTION" >
+
+	<title>Template 1</title>
+    
+    <link href="img/icon.png" rel="icon" sizes="128x128" />
+    <link href="img/icon.png" rel="icon" sizes="192x192" />
+
+    <link href="img/icon.png" rel="apple-touch-icon" />
+   	<link href="img/icon.png" rel="apple-touch-icon-precomposed" sizes="180x180" />
+   	<link href="img/icon.png" rel="apple-touch-icon-precomposed" sizes="152x152" />
+	<link href="img/icon.png" rel="apple-touch-icon-precomposed" sizes="120x120" />
+	<link href="img/icon.png" rel="apple-touch-icon-precomposed" sizes="76x76" />
+    
+    <!-- Plugins -->
+	<link rel="stylesheet" href="assets/slick/slick.css" >
+	<link rel="stylesheet" href="assets/slick/slick-theme.css" >
+    
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="css/index.css" >
+	
+</head>
+<body>
+	<header>
+	    <nav class="navbar navbar-default">
+            <div class="top-nav clearfix">
+                <a href="index.html" class="top-nav-logo"><img src="img/logo.png" alt=""></a>
+                <ul class="contact-info">
+                    <li><i class="icon fa fa-envelope"></i><a href="mailto: weblab@minionsolutions.com">weblab@minionsolutions.com</a></li>
+                    <li><i class="icon fa fa-clock-o"></i><span>Mon-Fri: 9:30-18:30</span></li>
+                    <li><i class="icon fa fa-phone"></i><span>02 535 0822</span></li>
+                </ul>
+            </div>
+            <div id="sticky" class="container-fluid row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://www.realestate.minionsolutions.com" target="_blank">Realestate</a></li>
+                        <li><a href="http://www.minionsolutions.com/Template1" target="_blank">Template 1</a></li>
+                        <li><a href="http://www.minionsolutions.com/Template2" target="_blank">Template 2</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+	    </nav>
+	</header>
+	<section id="home" class="banner">
+	    <div id="home-slider" class="banner-slider">
+	        <div class="slider-item">
+	            <div class="has-image" style="background-image: url(img/slide-1.jpg);"></div>
+	            <div class="slider-caption">
+                    <h1 class="">Delivery Unlimited.</h1>
+                    <p>
+                        We help people save time, make their life better, exercising communications, both in business and private life.
+                    </p>
+                    <a href="#" class="btn btn-banner">read more</a>
+	            </div>
+	        </div>
+	        <div class="slider-item">
+	            <div class="has-image" style="background-image: url(img/slide-2.jpg);"></div>
+	            <div class="slider-caption">
+                    <h1>A partnership based on trust.</h1>
+                    <p>
+                        We strive to ensure that our services have become a benchmark of quality in the field of the delivery.
+                    </p>
+                    <a href="#" class="btn btn-banner">read more</a>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="contact-form wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+	        <h1>Request a Quote</h1>
+	        <p>Get in touch with us if you have any queries and we will get back to you as soon as possible.</p>
+	        <div class="form-group clearfix">
+	            <input type="text" class="form-control" placeholder="Name">
+	        </div>
+	        <div class="form-group clearfix">
+	            <input type="text" class="form-control" placeholder="Email">
+	        </div>
+	        <div class="form-group clearfix">
+	            <textarea nrows="10" class="form-control" placeholder="Message"></textarea>
+	        </div>
+	        <div class="form-group clearfix">
+	            <button id="btnSend" class="btn btn-primary">Send</button>
+	        </div>
+	        <div></div>
+	    </div>
+	</section>
+	<section id="why-us" class="main">
+	    <div class="container wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
+	        <h1 class="title">Why Us</h1>
+	        <div id="why-us-container" class="row" ></div>
+            <script id="why-us-template" type="text/x-handlebars-template">
+                {{#each why-us}}
+                    <div class="col-md-4">
+                        <article>
+                            <i class="{{icon}}"></i>
+                            <h3>{{title}}</h3>
+                            {{{content}}}
+                        </article>
+                    </div>
+                {{/each}}
+            </script>
+	    </div>
+	</section>
+	<section id="our-mission" class="main has-image" style="background-image: url(img/parallax1.jpg);">
+	    <div class="container">
+            <h1 class="slogan">Our Mission</h1>
+            <p>
+                Transitec Transportation Company is committed to providing efficient and reliable services across all its business segments to its valued customers where safety is our top priority. Transitec will commit its resources to safe and environmentally sound operating practices. 
+            </p>
+            <p>
+                That will result in providing our employees with a safe work environment and our customers with the assurance of safe, dependable service. We aim to be recognized among current and prospective shipper clients as a premier provider of logistics and transportation services, to be the leader in the transportation management industry.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+	    </div>
+	</section>
+	<section id="services" class="main">
+        <div class="container">
+            <h1 class="title">Our Services</h1>
+            <p>
+                Welcome to our transportation world. We sincerely hope that each and every user entering our website wil find exactly what he/she is looking for.
+            </p>
+            <div id="services-container" class="row"></div>
+            <script id="services-template" type="text/x-handlebars-template">
+                {{#each services}}
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="{{imgSrc}}" class="img-responsive">
+                            <figcaption>
+                                <a href="{{permalink}}">{{title}}</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                {{/each}}
+            </script>
+        </div>
+	</section>
+	<section id="testimonial" class="main has-image" style="background-image: url(img/parallax2.jpg);">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-4">
+                    <img src="img/broker.jpg" alt="">
+	            </div>
+	            <div class="col-md-8">
+	                <article>
+	                    <h1>Testinonial</h1>
+                        <blockquote>
+                            <p>
+                                The customer service has been second to none! This is highlighted by their dependability, communication and "get it done attitude." Thanks to all the team for your help!
+                            </p>
+                            <cite>Derek Fisher</cite>
+                        </blockquote>
+                        <a href="#" class="btn btn-primary">Read More</a>
+	                </article>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section id="googleMap"></section>
+	<footer>
+        
+	</footer>
+	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/handlebars.js/handlebars-v4.0.5.js"></script>
+	<script type="text/javascript" src="assets/scroll-up/scroll-up.js"></script>
+	<script type="text/javascript" src="assets/wow/wow.min.js"></script>
+	<script type="text/javascript" src="assets/slick/slick.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        
+        function initialize() {
+			var latitude = 14.583969;
+			var longtitude = 121.062934;
+            var mapProp = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 14,
+
+                scrollwheel: false,
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(latitude, longtitude),
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [
+                    {"stylers":[{"visibility":"on"},{"saturation":-100},{"gamma":0.54}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"color":"#4d4946"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"gamma":0.48}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"gamma":7.18}]}
+                ]
+            };
+
+            var image = {
+                url: 'img/icon-google-map.png'
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(latitude, longtitude),
+                map: map,
+                icon: image,
+                title: 'Global One',
+                labelContent: 'Global One'
+            });
+
+            // Resize stuff...
+            google.maps.event.addDomListener(window, "resize", function () {
+                var center = map.getCenter();
+                google.maps.event.trigger(map, "resize");
+                map.setCenter(center);
+            });
+        } 
+        
+        function loadGoogleMap()
+        {			
+			$('<script />', {
+				type: 'text/javascript',
+				src: 'http://maps.googleapis.com/maps/api/js?key=AIzaSyDv1D0F0xKD-VguDPHx4DIRUIyQNp7j8uQ&callback=initialize'
+			}).appendTo('body');
+			
+            $('#googleMap').show();
+        }
+        
+        $(window).load(loadGoogleMap());
+        
+    </script>
+        <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/584901ae4160416f6d9b366a/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script>
+        $('#btnSend').click(function(){
+            getToken();
+            /*
+            var data = {
+                title : 'test'
+            }
+            $.ajax({
+                method: 'POST',
+                url: 'http://weblab.minionsolutions.com/wp-json/wp/v2/pages/',
+                data: data,
+                dataType: 'json',
+                header: 'Authorization' : 'Bearer ' + '',
+                success: function(data){
+                    alert(data.title.rendered);
+                },
+                error: function(data){
+                    alert(data.status);
+                }
+            });
+            */
+        });
+        
+        function getToken(){
+            var url = 'http://www.weblab.minionsolutions.com/json-wp' + '/wp/v2/posts';
+            var data = {
+                title: 'testpost'
+            };
+            
+            $.ajax({
+                method: "POST",
+                url: url,
+                data: data,
+                beforeSend: function ( xhr ) {
+                    xhr.setRequestHeader( 'X-WP-Nonce', POST_SUBMITTER.nonce );
+                },
+                success : function( response ) {
+                    console.log( response );
+                    alert( POST_SUBMITTER.success );
+                },
+                fail : function( response ) {
+                    console.log( response );
+                    alert( POST_SUBMITTER.failure );
+                }
+            });
+        }
+        
+</script>
+
+</body>
+</html>
